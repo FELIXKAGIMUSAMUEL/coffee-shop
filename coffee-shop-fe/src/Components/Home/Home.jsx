@@ -11,7 +11,7 @@ const Home = () => {
         <h3>Fresh coffee in the morning</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore,
-          sint cupiditate distinctio tempora reiciendis.
+          sint cupiditate distinctio tempoora reiciendis.
         </p>
         {/* Open Modal on Click */}
         <button className="btn" onClick={() => setShowModal(true)}>Sign Up</button>

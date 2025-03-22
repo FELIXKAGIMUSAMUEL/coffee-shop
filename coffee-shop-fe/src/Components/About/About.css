@@ -1,0 +1,76 @@
+.about {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+  
+  /* Heading Style */
+  .about .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+  
+  .about .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap; 
+} 
+
+.about .row .image{
+    flex: 1 1 45rem; 
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem;
+    line-height: 1.8;
+}
+
+.about .row .content .btn{
+    width: 20%; 
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+/* css for all buttons. */
+button, .btn {
+    width: 10%;
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+}

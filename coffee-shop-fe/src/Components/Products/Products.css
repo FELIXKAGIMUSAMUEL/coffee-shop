@@ -1,0 +1,83 @@
+.products {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+   
+  /* Heading Style */
+.products .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+  
+.products .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: 3rem;
+}
+
+.products .box-container .box .icons a:hover{
+    background: var(--main-color);
+}
+
+.products .box-container .box .image {
+    width: 100%; /* Ensure it takes the full width of its container */
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img {
+    width: 100%; /* Ensures image fits its container */
+    height: 100%; /* Keeps aspect ratio */
+    object-fit: cover; /* Prevents image stretching */
+}
+
+.products .box-container .box .content h3{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .stars{
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.products .box-container .box .content .price{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box-container .box .content .price span{
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}

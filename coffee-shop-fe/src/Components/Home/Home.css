@@ -1,0 +1,47 @@
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../../Assets/home-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.home .content .btn{
+    width: 30%; 
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: inline-block;   
+    margin-right: 80px;
+}
+
+.home .content .btn:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+

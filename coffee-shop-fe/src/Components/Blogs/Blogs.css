@@ -1,0 +1,87 @@
+
+ 
+  /* Styling the Blogs Section */
+  .blogs {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+  
+  /* Heading Style */
+  .blogs .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+  
+  .blogs .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+  /* Box Layout */
+  .blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box{ 
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .title{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.blogs .box-container .box .title:hover{
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .title span{
+    color: var(--main-color);
+    display: block;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+ 
+.blogs .box-container .box .content p{
+    color: #ccc;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.blogs .box-container .box .content .btn{
+    width: 35%; 
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+}

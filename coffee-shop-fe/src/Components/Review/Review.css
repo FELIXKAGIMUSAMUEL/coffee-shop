@@ -1,0 +1,54 @@
+.review {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+  
+  /* Heading Style */ 
+.review .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+  
+.review .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.review .box-container .box p{
+    color: #ccc;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}

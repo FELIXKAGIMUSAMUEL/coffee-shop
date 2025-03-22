@@ -1,0 +1,72 @@
+.menu {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+  
+  /* Heading Style */
+  .menu .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  } 
+  
+  .menu .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+} 
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover{
+    background: #fff;
+}
+
+.menu .box-container .box:hover > *{
+    color: var(--black);
+}
+
+.menu .box-container .box .btn{
+    width: 65%; 
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    display: inline-block;
+}

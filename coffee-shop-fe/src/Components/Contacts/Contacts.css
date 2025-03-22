@@ -1,0 +1,74 @@
+.contact {
+    padding-top: 180px;  /* Adds space from the top */
+    padding-bottom: 50px;  /* Adds space at the bottom */
+    min-height: 100vh;  /* Ensures the section takes full height */
+  }
+  
+  /* Heading Style */
+.contact .heading {  
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 50px;
+  }
+  
+.contact .heading span {
+    color: var(--main-color); /* Add your main color here */
+  }
+  
+
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;   
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+
+.contact .row form h3{
+    color: #fff;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: #fff;
+}
+ 
+.contact .row form .inputBox input{
+    width: 100%;
+    background: none;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-transform: none;
+}
+
+.contact .row form .btn{
+    width: 20%; 
+    text-align: center;
+    background: var(--main-color);
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    /* margin-top: 0rem; */
+    display: inline-block;
+}

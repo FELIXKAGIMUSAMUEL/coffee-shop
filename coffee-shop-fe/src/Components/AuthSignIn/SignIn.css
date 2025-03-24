@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    /*background: rgba(0, 0, 0, 0.5);  Dark background */
+    /*background: rgba(0, 0, 0, 0.5); Dark background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,47 +21,45 @@
 }
 
 .modal-content {
-    width: 900px;  /* Increased width for more spacious form */
+    width: 900px;  /* Adjusted width for a more compact modal */
     background: white;
     border-radius: 10px;
-    padding: 80px;  /* Increased padding for better spacing */
-   /* box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);  Stronger shadow for better depth */
+    padding: 80px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content h1 {
     text-align: center;
-    font-size: 32px;  /* Keep the h1 font size the same */
+    font-size: 40px;
     color: #333;
     margin-bottom: 40px;
+    font-weight: 500;
 }
 
 .input-box {
     position: relative;
     width: 100%;
-    margin: 25px 0;  /* Increased margin for more spacing between fields */
+    margin: 25px 0;
 }
 
 .input-box input {
     width: 100%;
-    padding: 20px 20px 20px 0;  /* Removed left padding to make room for the icon */
-    font-size: 25.5px;  /* Increased font size for input fields */
+    padding: 20px 20px 20px 0;  /* Remove left padding to make room for the icon */
+    font-size: 25.5px;  /* Changed font size to 25.5px */
     border: none;  /* No border initially */
     border-bottom: 2px solid #ccc;  /* Line under the input field */
     outline: none;  /* Remove default outline on focus */
 }
-
 /* Increase placeholder font size */
 .input-box input::placeholder {
-    font-size: 25.5px;  /* Placeholder font size increased */
+    font-size: 25.5px;  /* Changed placeholder font size to 25.5px */
     color: #888;  /* Optional: change color for better contrast */
 }
 
-/* Add border when field is focused */
 .input-box input:focus {
-    border-bottom: 2px solid #333;  /* Highlight bottom border when focused */
+    border-bottom: 2px solid #333;
 }
 
-/* Icon styling */
 .input-box .icon {
     position: absolute;
     right: 20px;  /* Adjusted for larger inputs */
@@ -70,43 +68,42 @@
     color: #888;
 }
 
-/* Forgot password link styling */
+button {
+    width: 100%;
+    padding: 20px;  /* Keep the button padding as is */
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;  /* Keep the button font size as is */
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+button:hover {
+    background: #333;
+}
+
 .forgot-password-link {
     text-align: center;
-    margin-top: 15px;
-    font-size: 25.5px;  /* Font size for the forgot password link */
+    margin-top: 40px;  /* Increased margin for better spacing */
+    font-size: 25.5px;  /* Changed link font size to 25.5px */
 }
+
 
 .forgot-password-link a {
     color: #333;
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .forgot-password-link a:hover {
     text-decoration: underline;
 }
 
-button {
-    width: 100%;
-    padding: 20px;
-    background: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 32px;  /* Keep the button font size the same */
-    cursor: pointer;
-    transition: none;  /* No transition */
-}
-
-button:hover {
-    background: #333;  /* Remove grey hover effect */
-}
-
 .register-link {
     text-align: center;
-    margin-top: 40px;  /* Increased margin for better spacing */
-    font-size: 25.5px;  /* Font size for the Sign Up link */
+    margin-top: 20px;
 }
 
 .register-link a {
@@ -118,5 +115,3 @@ button:hover {
 .register-link a:hover {
     text-decoration: underline;
 }
-
-/* In SignIn.css */

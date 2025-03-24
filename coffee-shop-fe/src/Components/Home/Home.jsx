@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import './Home.css';
-import SignUp from '../AuthSignUp/SignUp.jsx';
+
+import React, { useState } from "react";
+import "./Home.css";
+import SignUp from "../AuthSignUp/SignUp.jsx";
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -11,7 +12,7 @@ const Home = () => {
         <h3>Fresh coffee in the morning</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore,
-          sint cupiditate distinctio tempoora reiciendis.
+          sint cupiditate distinctio tempora reiciendis.
         </p>
         {/* Open Modal on Click */}
         <button className="btn" onClick={() => setShowModal(true)}>Sign Up</button>
@@ -25,3 +26,4 @@ const Home = () => {
 };
 
 export default Home;
+

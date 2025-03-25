@@ -1,15 +1,15 @@
-.about {
+/*.about {
     padding-top: 180px;  /* Adds space from the top */
-    padding-bottom: 50px;  /* Adds space at the bottom */
-    min-height: 100vh;  /* Ensures the section takes full height */
-  }
+ /*   padding-bottom: 50px;  /* Adds space at the bottom */
+ /*   min-height: 100vh; } /* Ensures the section takes full height */
   
+   
   /* Heading Style */
-  .about .heading {  
+ /* .about .heading {  
     text-align: center;
     font-size: 4rem;
     margin-top: 50px;
-  }
+  }*/
   
   .about .heading span {
     color: var(--main-color); /* Add your main color here */
@@ -62,7 +62,7 @@
 }
 
 /* css for all buttons. */
-button, .btn {
+/* button, .btn {
     width: 10%;
     text-align: center;
     background: var(--main-color);
@@ -73,4 +73,45 @@ button, .btn {
     border-radius: 0.5rem;
     margin-top: 1rem;
     display: block;
+} */
+
+/* Mobile and Small Tablet (up to 768px) */
+@media (max-width: 768px) {
+    /* Keep button size the same */
+    .about .row .content .btn {
+        width: 35%;  /* Keep the button width as originally set */
+        font-size: 1.5rem;  /* Keep the font size as originally set */
+        display: block;
+        margin: 0 auto; /* Center the button */
+    }
+
+    /* Adjust the heading margin for smaller screens */
+    .about .heading {
+        margin-top: 50px;
+        font-size: 2.5rem;  /* Reduce heading font size */
+    }
+
+    /* Stack the content and image vertically */
+    .about .row {
+        flex-direction: column; /* Stack content and image on small screens */
+        align-items: center;
+    }
+
+    .about .row .image {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    .about .row .content {
+        flex: 1 1 100%;
+        padding: 1.5rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2rem;  /* Adjust heading size inside content */
+    }
+
+    .about .row .content p {
+        font-size: 1.4rem;  /* Adjust paragraph size */
+    }
 }

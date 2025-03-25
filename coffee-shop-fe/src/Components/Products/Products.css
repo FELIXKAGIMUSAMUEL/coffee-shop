@@ -1,15 +1,15 @@
-.products {
-    padding-top: 180px;  /* Adds space from the top */
-    padding-bottom: 50px;  /* Adds space at the bottom */
-    min-height: 100vh;  /* Ensures the section takes full height */
+/*.products {
+    padding-top: 180px;  /* Adds space from the top 
+    padding-bottom: 50px;  /* Adds space at the bottom 
+    min-height: 100vh;  /* Ensures the section takes full height 
   }
    
-  /* Heading Style */
+  /* Heading Style 
 .products .heading {  
     text-align: center;
     font-size: 4rem;
     margin-top: 50px;
-  }
+  }*/
   
 .products .heading span {
     color: var(--main-color); /* Add your main color here */
@@ -80,4 +80,53 @@
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1.5rem;
+}
+
+/* Mobile and Small Tablet (up to 768px) */
+@media (max-width: 768px) {
+    /* Adjust the heading size and margin for smaller screens */
+    .products .heading {
+        font-size: 2.5rem;  /* Reduce font size of heading */
+        margin-top: 50px; /* Adjust top margin for balance */
+    }
+
+    /* Make the grid stack vertically on smaller screens */
+    .products .box-container {
+        grid-template-columns: 1fr; /* Stack the boxes in a single column */
+    }
+
+    /* Adjust box padding for better fit on smaller screens */
+    .products .box-container .box {
+        padding: 1.5rem; /* Reduced padding for better fit */
+    }
+
+    /* Adjust image container height for smaller screens */
+    .products .box-container .box .image {
+        height: 20rem; /* Adjust image height for smaller screens */
+    }
+
+    /* Adjust icon size and margin for better fit */
+    .products .box-container .box .icons a {
+        height: 4rem;  /* Reduced size */
+        width: 4rem;   /* Reduced size */
+        font-size: 1.5rem; /* Reduced font size */
+        margin: 1.5rem; /* Reduced margin */
+    }
+
+    /* Adjust text size and padding in content for better readability */
+    .products .box-container .box .content h3 {
+        font-size: 2rem;  /* Adjust text size */
+    }
+
+    .products .box-container .box .content .stars i {
+        font-size: 1.5rem;  /* Adjust icon size */
+    }
+
+    .products .box-container .box .content .price {
+        font-size: 2rem;  /* Adjust price font size */
+    }
+
+    .products .box-container .box .content .price span {
+        font-size: 1.2rem;  /* Adjust font size of line-through */
+    }
 }

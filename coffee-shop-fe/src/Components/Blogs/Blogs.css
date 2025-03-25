@@ -1,18 +1,17 @@
 
  
-  /* Styling the Blogs Section */
-  .blogs {
-    padding-top: 180px;  /* Adds space from the top */
-    padding-bottom: 50px;  /* Adds space at the bottom */
-    min-height: 100vh;  /* Ensures the section takes full height */
-  }
+  /* Styling the Blogs Section 
+  .blogs {*/
+    /*padding-top: 180px;  /* Adds space from the top */
+    /*padding-bottom: 50px;  /* Adds space at the bottom */
+   /* min-height: 100vh;  }/* Ensures the section takes full height */
+  
   
   /* Heading Style */
-  .blogs .heading {  
-    text-align: center;
-    font-size: 4rem;
-    margin-top: 50px;
-  }
+ /* .blogs .heading {  
+  /*  text-align: center;
+ /*   font-size: 4rem;
+ /*   margin-top: 50px;}*/
   
   .blogs .heading span {
     color: var(--main-color); /* Add your main color here */
@@ -84,4 +83,36 @@
     border-radius: 0.5rem;
     margin-top: 1rem;
     display: inline-block;
+}
+
+/* Responsive Adjustments for Mobile and Smaller Screens */
+@media (max-width: 768px) {
+    /* Stack the content and center the button */
+    .blogs .box-container {
+        grid-template-columns: 1fr; /* Stack all boxes vertically */
+    }
+
+    .blogs .box-container .box .content .btn {
+        width: 40%;  /* Button takes more width on small screens */
+        margin: 1rem auto; /* Center the button */
+        display: flex;
+        justify-content: center;
+    }
+
+    .blogs .heading {
+        font-size: 2.5rem; /* Smaller heading for mobile */
+        margin-top: 20px; /* Adjust margin for better alignment */
+    }
+
+    .blogs .box-container .box .content {
+        padding: 1.5rem; /* Reduced padding for smaller screens */
+    }
+
+    .blogs .box-container .box .title {
+        font-size: 2rem; /* Smaller title for mobile */
+    }
+
+    .blogs .box-container .box .content p {
+        font-size: 1.4rem; /* Smaller text for paragraphs */
+    }
 }

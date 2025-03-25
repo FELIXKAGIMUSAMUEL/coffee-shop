@@ -1,3 +1,4 @@
+
 import React from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import "../AuthSignIn/SignIn.css";
@@ -44,3 +45,4 @@ const SignIn = ({ closeModal, setShowSignIn }) => {
 };
 
 export default SignIn;
+

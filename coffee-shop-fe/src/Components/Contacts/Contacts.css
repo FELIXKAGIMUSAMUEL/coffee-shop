@@ -1,15 +1,15 @@
-.contact {
-    padding-top: 180px;  /* Adds space from the top */
-    padding-bottom: 50px;  /* Adds space at the bottom */
-    min-height: 100vh;  /* Ensures the section takes full height */
+/*.contact {
+    padding-top: 180px;   Adds space from the top 
+    padding-bottom: 50px;   Adds space at the bottom 
+    min-height: 100vh;  Ensures the section takes full height 
   }
   
-  /* Heading Style */
+   Heading Style 
 .contact .heading {  
     text-align: center;
     font-size: 4rem;
     margin-top: 50px;
-  }
+  } */
   
 .contact .heading span {
     color: var(--main-color); /* Add your main color here */
@@ -71,4 +71,42 @@
     border-radius: 0.5rem;
     /* margin-top: 0rem; */
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    /* Make the form and map layout stack on smaller screens */
+    .contact .row {
+        flex-direction: column; /* Stack form and map vertically */
+    }
+
+    .contact .row .map {
+        flex: 1 1 100%; /* Make the map take full width on mobile */
+        margin-bottom: 2rem; /* Add spacing between map and form */
+    }
+
+    .contact .row form {
+        flex: 1 1 100%; /* Ensure the form takes full width on mobile */
+        padding: 3rem 2rem; /* Adjust padding for better spacing */
+    }
+
+    /* Adjust heading */
+    .contact .heading {
+        font-size: 2.5rem; /* Make the heading smaller on mobile */
+        margin-top: 20px; /* Adjust top margin for proper spacing */
+    }
+
+    /* Adjust the input box width and spacing */
+    .contact .row form .inputBox {
+        width: 100%; /* Ensure the input boxes take full width */
+        margin: 1rem 0; /* Reduced spacing for better layout */
+    }
+
+    /* Button adjustments for better mobile experience */
+    .contact .row form .btn {
+        width: 45%;  /* Keep button width the same */
+        font-size: 1.5rem;  /* Keep font size the same */
+        display: inline-block;
+        margin: 0 auto; /* Center the button on small screens */
+        margin-top: 2rem;
+    }
 }

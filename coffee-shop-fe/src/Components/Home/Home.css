@@ -45,3 +45,36 @@
     color: white;
 }
 
+@media (max-width: 768px) {
+    /* Adjust the content and button layout for mobile */
+    .home {
+        margin-top: 8rem;
+        min-height: auto;  /* Adjust height for better fit on mobile */
+        padding: 3rem 1rem;  /* Add padding for spacing */
+        background-position: center top; /* Adjust background for smaller screens */
+    }
+
+    .home .content {
+        max-width: 100%;  /* Allow content to take up full width */
+        padding: 0 2rem;  /* Add padding to ensure content doesn't touch edges */
+    }
+
+    .home .content h3 {
+        font-size: 3.5rem;  /* Make the heading smaller for mobile */
+        text-align: center;  /* Center align heading */
+    }
+
+    .home .content p {
+        font-size: 1.6rem;  /* Adjust paragraph font size for readability */
+        line-height: 1.6;  /* Slightly adjust line height for mobile */
+        padding: 1rem 0;  /* Add padding for better spacing */
+        text-align: center;  /* Center-align the paragraph text */
+    }
+
+    .home .content .btn {
+        width: 40%;  /* Make button width larger on mobile */
+        margin: 0 10px;  /* Center the button with margin */
+        font-size: 1.4rem;  /* Adjust font size for better mobile readability */
+
+    }
+}

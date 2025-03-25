@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import cartItem0 from "../../Assets/logo.jpg"
 import cartItem1 from "../../Assets/cart-item-1.jpg";
@@ -91,15 +91,15 @@ const hideOnClickOutside = (e) => {
     </a>
 
     <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
-
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/menu">Menu</Link>
-      <Link to="/products">Products</Link>
-      <Link to="/review">Reviews</Link>
-      <Link to="/contacts">Contact</Link>
-      <Link to="/blogs">Blogs</Link>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#products">Products</a>
+      <a href="#review">Reviews</a>
+      <a href="#contacts">Contact</a>
+      <a href="#blogs">Blogs</a>
     </nav>
+
 
     <div className="icons">
       <FontAwesomeIcon icon={faSearch} 

@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    /*background: rgba(0, 0, 0, 0.5); /* Dark background */
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,11 +115,41 @@ button:hover {
     text-decoration: underline;
 }
 
+
 @media (max-width: 768px) {
+    /* Adjust input font size on smaller screens */
     .input-box input {
-        font-size: 20px;  /* Reduce font size for smaller screens */
+        font-size: 20px;  /* Reduce font size for mobile/tablet */
     }
+
+    /* Adjust placeholder text size */
     .input-box input::placeholder {
-        font-size: 20px;  /* Adjust placeholder font size */
+        font-size: 20px;  /* Smaller placeholder font size */
+    }
+
+    /* Make button font size smaller on smaller screens */
+    button {
+        font-size: 24px; /* Adjust button text for mobile */
+        padding: 15px;
+    }
+
+    /* Ensure input fields are stacked vertically */
+    .input-box.name-fields {
+        flex-direction: column;  /* Stack the name fields on top of each other */
+        gap: 10px;  /* Reduce space between name fields */
+    }
+
+    /* Ensure modal content is not too wide on smaller screens */
+    .modal-content {
+        width: 95%;  /* Make modal content take more space on small screens */
+        padding: 20px;  /* Adjust padding for smaller screens */
+    }
+
+    .modal-content h1 {
+        font-size: 22px;  /* Adjust heading size */
+    }
+
+    .modal-overlay {
+        padding: 10px;  /* Reduce overlay padding for mobile */
     }
 }

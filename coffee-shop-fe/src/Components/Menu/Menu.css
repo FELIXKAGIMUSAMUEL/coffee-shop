@@ -1,14 +1,13 @@
 .menu {
-    padding-top: 180px;  /* Adds space from the top */
     padding-bottom: 50px;  /* Adds space at the bottom */
     min-height: 100vh;  /* Ensures the section takes full height */
   }
   
   /* Heading Style */
   .menu .heading {  
+    
     text-align: center;
     font-size: 4rem;
-    margin-top: 50px;
   } 
   
   .menu .heading span {
@@ -69,4 +68,44 @@
     border-radius: 0.5rem;
     margin-top: 1rem;
     display: inline-block;
+}
+
+/* Mobile and Small Tablet (up to 768px) */
+@media (max-width: 768px) {
+    /* Keep the button width and font size as originally set */
+    .menu .box-container .box .btn {
+        width: 45%;  /* Keep button width the same */
+        font-size: 1.5rem;  /* Keep font size the same */
+        display: inline-block;
+        margin: 0 auto; /* Center the button on small screens */
+    }
+
+    /* Adjust the heading size and margin for smaller screens */
+    .menu .heading {
+        font-size: 2.5rem;  /* Reduce font size of heading */
+        margin-top: 50px; /* Adjust top margin */
+    }
+
+    /* Make the menu boxes stack vertically */
+    .menu .box-container {
+        grid-template-columns: 1fr; /* Stack the boxes in a single column */
+    }
+
+    /* Adjust box padding for better fit on smaller screens */
+    .menu .box-container .box {
+        padding: 2rem; /* Reduced padding */
+    }
+
+    .menu .box-container .box img {
+        height: 8rem; /* Adjust image size */
+    }
+
+    .menu .box-container .box h3 {
+        font-size: 1.6rem; /* Adjust heading size inside the box */
+    }
+
+    .menu .box-container .box .price {
+        font-size: 2rem;  /* Adjust price size */
+        padding: 2rem 0;  /* Adjust padding */
+    }
 }

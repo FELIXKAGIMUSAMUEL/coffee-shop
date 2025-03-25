@@ -1,15 +1,15 @@
-.review {
-    padding-top: 180px;  /* Adds space from the top */
-    padding-bottom: 50px;  /* Adds space at the bottom */
-    min-height: 100vh;  /* Ensures the section takes full height */
+/*.review {
+    padding-top: 180px;  /* Adds space from the top 
+    padding-bottom: 50px;  /* Adds space at the bottom 
+    min-height: 100vh;   Ensures the section takes full height 
   }
   
-  /* Heading Style */ 
+   Heading Style 
 .review .heading {  
     text-align: center;
     font-size: 4rem;
     margin-top: 50px;
-  }
+  }*/
   
 .review .heading span {
     color: var(--main-color); /* Add your main color here */
@@ -51,4 +51,44 @@
 .review .box-container .box .stars i{
     font-size: 1.5rem;
     color: var(--main-color);
+}
+
+/* Mobile and Small Tablet (up to 768px) */
+@media (max-width: 768px) {
+    /* Adjust heading size and margin for smaller screens */
+    .review .heading {
+        font-size: 2.5rem;  /* Reduce font size of heading */
+        margin-top: 50px;   /* Adjust top margin for balance */
+    }
+
+    /* Stack the review boxes vertically on smaller screens */
+    .review .box-container {
+        grid-template-columns: 1fr; /* Stack the boxes in a single column */
+    }
+
+    /* Adjust box padding for smaller screens */
+    .review .box-container .box {
+        padding: 1.5rem;  /* Reduced padding for better fit */
+    }
+
+    /* Adjust user image size for better fit */
+    .review .box-container .box .user {
+        height: 5rem;  /* Reduced height */
+        width: 5rem;   /* Reduced width */
+    }
+
+    /* Adjust font size of review text for mobile */
+    .review .box-container .box p {
+        font-size: 1.3rem;  /* Reduced font size for mobile */
+        padding: 1rem 0;    /* Adjusted padding */
+    }
+
+    /* Adjust text size of name and stars */
+    .review .box-container .box h3 {
+        font-size: 1.8rem;  /* Reduced font size */
+    }
+
+    .review .box-container .box .stars i {
+        font-size: 1.3rem;  /* Adjusted font size of stars */
+    }
 }
